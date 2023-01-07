@@ -31,11 +31,11 @@ function Calculator () {
             if (e === "+") {
               stack.push(stack.pop() + stack.pop());
             } else if (e === "-") {
-              stack.push(-stack.pop() + stack.pop());
+              stack.push(stack.pop() - stack.pop());
             } else if (e === "*") {
               stack.push(stack.pop() * stack.pop());
             } else if (e === "/") {
-              stack.push((1 / stack.pop()) * stack.pop());
+              stack.push(( stack.pop()) / stack.pop());
             } else {
               stack.push(parseFloat(e));
             }
