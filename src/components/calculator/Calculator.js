@@ -132,8 +132,9 @@ function Calculator () {
             <div className="calculator_body">
                 <div className="calculator_input_group">
                     <input 
+                    disabled={result !== null ? true : false}
                     className="calc_input"
-                    placeholder="Enter the operand and operator: 2,3,4.8,*,+,-,/"
+                    placeholder="Enter the operand and operator: 2,3,4.8,*,+"
                     type="text"
                     value={
                         result !== null ? `${userInput} = ${result.toFixed(2)}` : userInput
